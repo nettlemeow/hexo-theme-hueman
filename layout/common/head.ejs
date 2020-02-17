@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8" />
-
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="no-referrer">
     <%- partial('pwa/index') %>
     <%
         var title = page.title;
@@ -56,4 +57,6 @@
 
     <%- js('libs/jquery/3.4.1/jquery.min') %>
     <%- partial('plugin/scripts', { isHead: true }) %>
+    <script src="https://cdn.bootcss.com/echarts/4.3.0/echarts.min.js"></script>
+    <%- js('js/chart.js') %>
 </head>
